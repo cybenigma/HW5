@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JavaScript_Functions_Assignment</title>
+  </head>
+	<body>
+		
+  	  function reverse_a_number(num){
+  	    str = "" + num;
+  	    console.log(str);
+	    return str.split("").reverse().join("");
+  	  }
+
+
+	  console.log(reverse_a_number(32243));
+
+		//function to test for a prime number
+
+	  function test_prime(num){  
+	    if (num===1){
+              return false;
+  	    }
+
+	    else if(num === 2){
+	      return true;
+  	    }
+
+	    else{
+    	      for(var x = 2; x < num; x++){
+      	        if(num % x === 0){
+                  return false;
+      	        }END if
+               }END for
+             return true;  
+        }END else
+        }//END test_prime
+
+
+            console.log(test_prime(43));
+
+		//function to test occurances
+
+	  function char_count(str, letter) 
+	  {
+	    var letter_Count = 0;
+ 	    for (var position = 0; position < str.length; position++) 
+ 	  {
+    	    if (str.charAt(position) == letter) 
+      	  {
+      	    letter_Count += 1;
+     	  }
+  	  }
+  	    return letter_Count;
+	  }
+
+	  console.log(char_count('w3resource.com', 'o'));
+
+
+
+	</body>
+</html>
+
+
